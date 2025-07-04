@@ -8,4 +8,4 @@ this means that they exist on the same network and can recognize each other by t
 
     access to ->  http://localhost:8080
   
-_webapp directory using .env file, but it is properly reflected._
+**webapp directory using .env file, but it is properly reflected.**

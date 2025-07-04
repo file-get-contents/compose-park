@@ -1,0 +1,26 @@
+# compose command ignore top-level "x-" anchor
+# https://medium.com/@kinghuang/docker-compose-anchors-aliases-extensions-a1e4105d70bd
+
+name: compose-go
+
+services:
+  backend:
+    container_name: webapp
+    ports:
+      - "3000:3000"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - G_NAME=${G_NAME:-GOPHAR}
+        - G_GID=${G_GID:-1000}
+        - G_UID=${G_UID:-1000}
+    volumes:
+      - repository:/app
+    working_dir: /app
+    tty: true
+    user: ${G_NAME:-GOPHAR}
+    entrypoint: ["go", "run", "main.go"]
+
+volumes:
+  repository:

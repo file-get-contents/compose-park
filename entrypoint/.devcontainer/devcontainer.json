@@ -1,0 +1,8 @@
+{
+	"name": "entrypoint",
+	"dockerComposeFile": [
+		"../compose.yml"
+	],
+	"service": "base",
+	"workspaceFolder": "/home"
+}

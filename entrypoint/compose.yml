@@ -1,0 +1,16 @@
+name: entrypoint
+services:
+  base:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: entrypointer
+    entrypoint:
+      - /usr/bin/bash
+      - -c
+      - |-
+        echo 'compose entrypoint.'
+        while :; do sleep 10; done
+
+
+

@@ -1,0 +1,23 @@
+name: command-entrypoint
+
+services:
+  base:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: command-entrypoint-priority
+    command:
+      - /usr/bin/bash
+      - -c
+      - |-
+        echo 'compose command.'
+    entrypoint:
+      - /usr/bin/bash
+      - -c
+      - |-
+        echo 'compose entrypoint.'
+        while :; do sleep 10; done
+
+
+
+

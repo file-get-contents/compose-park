@@ -1,3 +1,5 @@
+name: include
+
 include:
   - ./webapp/compose.yml
   - ./reverse-proxy/compose.yml

@@ -1,4 +1,4 @@
-FROM debian:stable-slim AS test
+FROM debian:stable-slim AS include
 
 ARG G_NAME
 ARG G_GID

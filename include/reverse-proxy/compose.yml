@@ -2,7 +2,7 @@ name: reverse-proxy
 
 services:
   reverse_proxy:
-    container_name: proxy
+    container_name: reverse-proxy
     image: httpd:latest
     ports:
       - "8080:80"
@@ -10,8 +10,6 @@ services:
     volumes:
       - ./conf:/usr/local/apache2/conf
     command: []
-#    depends_on:
-#      - backend
     entrypoint: 
       - /usr/bin/bash
       - -c 

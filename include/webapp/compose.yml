@@ -1,8 +1,7 @@
 # compose command ignore top-level "x-" anchor
 # https://medium.com/@kinghuang/docker-compose-anchors-aliases-extensions-a1e4105d70bd
 
-name: compose-go
-
+name: webapp
 services:
   backend:
     container_name: webapp

@@ -1,0 +1,17 @@
+name: command
+services:
+  base:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: commander
+    command: 
+      - /usr/bin/bash
+      - -c
+      - |-
+        echo 'compose commnad.'
+        while :; do sleep 10; done
+
+
+
+

@@ -1,0 +1,11 @@
+name: dockerfile_inline
+services:
+  base:
+    build:
+      dockerfile_inline: |-
+        FROM httpd:latest
+    container_name: dockerfile_inline
+
+
+
+

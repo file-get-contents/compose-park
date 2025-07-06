@@ -1,0 +1,8 @@
+{
+	"name": "dockerfile_inline",
+	"dockerComposeFile": [
+		"../compose.yml"
+	],
+	"service": "base",
+	"workspaceFolder": "/home"
+}

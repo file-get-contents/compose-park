@@ -1,0 +1,12 @@
+name: volumes
+services:
+  base:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: volumes
+    volumes:
+      - ./conf:/dummy
+
+
+

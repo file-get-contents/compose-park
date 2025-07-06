@@ -7,17 +7,17 @@ services:
     ports:
       - "8080:80"
       - "443:443"
-    volumes:
-      - ./conf:/usr/local/apache2/conf
-    command: []
-    entrypoint: 
-      - /usr/bin/bash
-      - -c 
-      - |-
-        apt-get update && apt-get install -y openssl
-        mkdir -p ssl
-        cd ssl
-        openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt -subj "/C=US/ST=Test/L=Test/O=Demo/CN=localhost"
-        httpd-foreground
+#    volumes:
+#      - ./conf:/usr/local/apache2/conf
+#    command: []
+#    entrypoint: 
+#      - /usr/bin/bash
+#      - -c 
+#      - |-
+#        apt-get update && apt-get install -y openssl
+#        mkdir -p ssl
+#        cd ssl
+#        openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt -subj "/C=US/ST=Test/L=Test/O=Demo/CN=localhost"
+#        httpd-foreground
 
 

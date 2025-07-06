@@ -14,5 +14,5 @@ this plaything use configs property.
 
 
 > [!WARNING]
-> Does not support uid, gid, and mode properties.
+> Does not support uid, gid, and mode properties.  
 > [[BUG] Configs uid, gid and mode is will not take effect with configs of type file ](https://github.com/docker/compose/issues/12270)

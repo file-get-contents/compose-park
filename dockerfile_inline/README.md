@@ -14,4 +14,4 @@ this plaything use dockerfile_inline property.
 > devcontainer unsupport this.  
 > [Error ENOENT occurs with compose file containing dockerfile_inline field.](https://github.com/devcontainers/cli/issues/765)  
 > [Support dockerfile_inline option docker-compose syntax](https://github.com/microsoft/vscode-remote-release/issues/8445)  
-> [Error ENOENT occurs with compose file containing dockerfile_inline field.](https://github.com/devcontainers/cli/issues/765)  
+

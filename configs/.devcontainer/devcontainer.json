@@ -1,0 +1,8 @@
+{
+	"name": "configs",
+	"dockerComposeFile": [
+		"../compose.yml"
+	],
+	"service": "base",
+	"workspaceFolder": "/usr/local/apache2"
+}

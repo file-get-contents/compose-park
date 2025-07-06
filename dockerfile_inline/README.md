@@ -1,4 +1,4 @@
-# dockerfile_inline
+# [dockerfile_inline](https://docs.docker.com/reference/compose-file/build/#dockerfile_inline)
 this plaything use dockerfile_inline property.  
   
     cd dockerfile_inline

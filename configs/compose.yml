@@ -1,0 +1,21 @@
+name: configs
+
+configs:
+  httpd-conf:
+    file: ./conf/httpd.conf
+
+services:
+  base:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: configs
+    configs:
+        - source: httpd-conf
+          target: /usr/local/apache2/conf/httpd.conf
+          uid: '1000'
+          gid: '1000'
+          mode: 0755
+
+
+

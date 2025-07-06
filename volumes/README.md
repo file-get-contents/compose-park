@@ -1,7 +1,7 @@
-# dockerfile_inline
-this plaything use volume property.  
+# [volumes](https://docs.docker.com/reference/compose-file/volumes/)
+this plaything use volumes property.  
   
-    cd volume
+    cd volumes
     docker compose up --build
     docker exec -it volumes bash
     

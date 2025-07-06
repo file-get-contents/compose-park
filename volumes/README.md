@@ -23,5 +23,5 @@ this plaything use volume property.
     -rwxrwxrwx 1 root root 1060 Jul  6 03:40 httpd-vhosts.conf
 
 
-**dockerfile copy command allows you to reflect differences while maintaining the directory structure.**  
-**compose volumes can not do it.**
+> [!IMPORTANT]
+> the dockerfile copy command allows you to reflect differences while maintaining the directory structure, but this is not possible with compose volumes. because the purpose of a compose volume is to maintain space.

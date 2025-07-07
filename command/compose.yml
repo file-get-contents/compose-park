@@ -10,8 +10,8 @@ services:
       - -c
       - |-
         echo 'compose commnad.'
-        while :; do sleep 10; done
-
+        bash
+    tty: true
 
 
 

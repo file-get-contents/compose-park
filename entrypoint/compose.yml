@@ -10,7 +10,8 @@ services:
       - -c
       - |-
         echo 'compose entrypoint.'
-        while :; do sleep 10; done
+        bash
+    tty: true
 
 
 
